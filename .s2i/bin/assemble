@@ -9,7 +9,6 @@ echo "---> Installing application source..."
 mv /tmp/src/* ./
 
 echo "<--- Testing that my changes are here --->
-yum install samba-client -y
 
 if [ -f composer.json ]; then
   echo "Found 'composer.json', installing dependencies using composer.phar... "
