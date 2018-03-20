@@ -25,7 +25,7 @@ if (getenv('SQLITE_DATABASE')) {
 if ($autoconfig_enabled) {
     $AUTOCONFIG["dbtableprefix"] = getenv('NEXTCLOUD_TABLE_PREFIX') ?: "";
 
-    $AUTOCONFIG["directory"] = getenv('NEXTCLOUD_DATA_DIR') ?: "/var/www/html/data";
+    $AUTOCONFIG["directory"] = getenv('NEXTCLOUD_DATA_DIR') ?: "/opt/app-root/src/data";
 
     if (getenv('NEXTCLOUD_ADMIN_USER') && getenv('NEXTCLOUD_ADMIN_PASSWORD')) {
         $AUTOCONFIG["adminlogin"] = getenv('NEXTCLOUD_ADMIN_USER');
